@@ -4,26 +4,26 @@
             <div class="row g-3">
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">course title</label>
-                    <input class="form-control" type="text" name="" id="">
+                    <input class="form-control" type="text" name=" courseTitle"[(ngModel)]=" courseTitle" id="">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">duration</label>
-                    <input class="form-control" type="text" name="" id="">
+                    <input class="form-control" type="text" name="courseDuration" [(ngModel)]="courseDuration" id="">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="form-label">discription</label>
-                    <textarea class="form-control" name="" id="" cols="30" rows="10"></textarea>
+                    <textarea class="form-control" name="courseDescription"[(ngModel)]="courseDescription" id="" cols="30" rows="10"></textarea>
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">course date</label>
-                    <input class="form-control" type="date" name="" id="">
+                    <input class="form-control" type="date" name="courseDate"[(ngModel)]="courseDate" id="">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">course venue</label>
-                    <input class="form-control" type="text" name="" id="">
+                    <input class="form-control" type="text" name="courseVenue" [(ngModel)]="courseVenue"id="">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-12 col-xl-12 col-xxl-12">
-                    <button class="btn btn-success">register</button>
+                    <button class="btn btn-success" (click)="readValue()">register</button>
                 </div>
             </div>
         </div>
