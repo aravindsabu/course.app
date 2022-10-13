@@ -10,4 +10,7 @@ export class ApiService {
   viewviewall=()=>{
     return this.http.get ("http://mylinkurcodesapp.herokuapp.com/getcourses")
   }
+  addcourse=(data:any)=>{
+    return this.http.post("https://mylinkurcodesapp.herokuapp.com/addcourse",data)
+  }
 }
